@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+        <form id="survey-form">
+            <div class="group">
+                <label id="name-label" for="name">Name
+                    <input required id="name" type="text" name="name" placeholder="Enter your name">
+                </label>
+            </div>
+            <div class="group">
+                <label id="email-label" for="email">Email
+                    <input required id="email" type="email" name="email" placeholder="Enter your email">
+                </label>
+            </div>
+            <div class="group">
+                <label id="number-label" for="number">Age (optional)
+                    <input id="number" type="number" name="age" min="10" max="100" placeholder="Age">
+                </label>
+            </div>
+                <p>Which option best describes your current industry?</p>
+                <select id="dropdown" required>
+                    <option disabled selected value="">Select Current Industry</option>
+                    <option value="Software">Software Development</option>
+                    <option value="Data">Data Analytics</option>
+                    <option value="Mobile">Mobile Development</option>
+                    <option value="Game">Game Development</option>
+                    <option value="other">Other</option>
+                </select>
+                <p>Would you like to change your career?
+                    <label><input type="radio" name="no-yes">No</label>
+                    <label><input type="radio" name="no-yes">Yes</label>
+                </p>
+                <p>Which industry do you want to move to?</p>
+                <select id="dropdown-two" required>
+                    <option disabled selected value="">Select Industry</option>
+                    <option value="Software">Software Development</option>
+                    <option value="Data">Data Analytics</option>
+                    <option value="Mobile">Mobile Development</option>
+                    <option value="Game">Game Development</option>
+                    <option value="other">Other</option>
+                </select>
+                <p>What steps have you taken to change? (check all that apply)</p>
+                    <label><input type="checkbox">Projects</label>
+                    <label><input type="checkbox">Portfolio</label>
+                    <label><input type="checkbox">GitHub</label>
+                    <label><input type="checkbox">Optimizing Resume</label>
+                    <label><input type="checkbox">Mock Interviews</label>
+                <textarea>Enter your comment here...</textarea>
+                <button type="submit" id="button">Submit</button>  
+        </form>
+    </main>
+</body>
+</html>
